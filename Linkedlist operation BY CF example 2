@@ -1,0 +1,24 @@
+ 
+import java.util.LinkedList;
+
+public class DSLinkedListoperation {
+    public static void main(String[] args) {
+        LinkedList<Integer> sc = new LinkedList<>();
+        sc.add(100);
+        sc.add(200);            //insertion
+        sc.add(300);
+        sc.set(0,50);   //insert at any location
+        sc.remove(2);       
+        boolean h=sc.contains(100);     //remove from any location
+       System.out.println(h); //searching operation
+       int s=sc.size();                //get size
+        
+       System.out.println("Size of this linkedlist="+s);
+       int se=sc.indexOf(2);                //get element by loc
+      System.out.println("Index="+se);           //return -1 if not found or if found return 1
+        for (Integer item : sc) {
+             System.out.println(item);         //to traverse in forward mannner
+         }
+       }
+}
+ 
