@@ -1,0 +1,19 @@
+import java.util.Stack;
+class MainStack
+{
+    public static void main(String[] args)
+    {
+        Stack<Integer> sc=new Stack<>();
+        sc.push(100);
+        sc.push(200);
+        for(int item:sc)
+        {
+            System.out.println(item); 
+        }
+       System.out.println(sc.isEmpty()); 
+       System.out.println(sc.size()); 
+       //System.out.println(sc.pop()); 
+       System.out.println(sc.isEmpty()); 
+       System.out.println(sc.peek()); 
+    }
+}
